@@ -1,0 +1,1187 @@
+{
+  "acceptance_criteria": [
+    {
+      "criterion_type": "ARCHITECTURE",
+      "description": "All MUST_CHANGE scope items are implemented and MUST_PRESERVE/MUST_NOT_CHANGE constraints are respected.",
+      "evidence_required": true,
+      "expected_result": "No critical assurance failures for architecture scope or prohibited changes.",
+      "id": "d0bba841-843a-4323-9bb7-2b491a3b3209",
+      "metadata": {},
+      "required": true,
+      "sequence": 1,
+      "target_reference": null,
+      "title": "Approved Desired Architecture implemented",
+      "verification_method": "Blueprint assurance plus source review"
+    }
+  ],
+  "agent_guidance": {
+    "canonical": "Use this package as bootstrap only. Retrieve detailed context through Blueprint MCP.",
+    "must": [
+      "Use the frozen implementation contract.",
+      "Respect MUST_NOT_CHANGE and MUST_PRESERVE scope.",
+      "Preserve UNKNOWN as UNKNOWN; ask/report missing context instead of guessing."
+    ],
+    "vendor_neutral": true
+  },
+  "base_current_state": {
+    "approved_at": null,
+    "approved_by_id": null,
+    "created_at": "2026-08-14T11:32:14.754256+00:00",
+    "created_by_id": null,
+    "description": "Source-backed architecture state generated from Architecture Kernel analysis.",
+    "id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+    "metadata": {
+      "implementation_status": "IMPLEMENTED_REALITY"
+    },
+    "name": "CURRENT v1",
+    "parent_state_id": null,
+    "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+    "state_type": "CURRENT",
+    "status": "APPROVED",
+    "updated_at": "2026-08-14T11:32:14.754268+00:00",
+    "version": 1
+  },
+  "contract": {
+    "hash": "7db971baf307e42af45a3dcefe1e0c0cdb78a3e8c27cab449ac7c38eca67a01a",
+    "id": "3678a036-df80-48b7-b3af-a4fe613df230",
+    "stable_key": "IC-0002",
+    "status": "READY_FOR_IMPLEMENTATION",
+    "version": 1
+  },
+  "contract_summary": {
+    "acceptance": [
+      {
+        "criterion_type": "ARCHITECTURE",
+        "description": "All MUST_CHANGE scope items are implemented and MUST_PRESERVE/MUST_NOT_CHANGE constraints are respected.",
+        "evidence_required": true,
+        "expected_result": "No critical assurance failures for architecture scope or prohibited changes.",
+        "id": "d0bba841-843a-4323-9bb7-2b491a3b3209",
+        "metadata": {},
+        "required": true,
+        "sequence": 1,
+        "target_reference": null,
+        "title": "Approved Desired Architecture implemented",
+        "verification_method": "Blueprint assurance plus source review"
+      }
+    ],
+    "approved_at": "2026-08-21T11:55:35.250399+00:00",
+    "architecture_change_set": {
+      "approved_at": "2026-08-21T11:33:28.298142+00:00",
+      "approved_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+      "base_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+      "created_at": "2026-08-21T11:33:26.083204+00:00",
+      "created_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+      "description": "7 diagram workspace changes",
+      "desired_state_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+      "id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+      "metadata": {
+        "base_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18"
+      },
+      "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+      "rejected_at": null,
+      "rejected_by_id": null,
+      "rejection_reason": null,
+      "revision": 4,
+      "status": "APPROVED",
+      "title": "Diagram proposal revision 7",
+      "updated_at": "2026-08-21T11:33:28.298219+00:00"
+    },
+    "base_current_state": {
+      "approved_at": null,
+      "approved_by_id": null,
+      "created_at": "2026-08-14T11:32:14.754256+00:00",
+      "created_by_id": null,
+      "description": "Source-backed architecture state generated from Architecture Kernel analysis.",
+      "id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+      "metadata": {
+        "implementation_status": "IMPLEMENTED_REALITY"
+      },
+      "name": "CURRENT v1",
+      "parent_state_id": null,
+      "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+      "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+      "state_type": "CURRENT",
+      "status": "APPROVED",
+      "updated_at": "2026-08-14T11:32:14.754268+00:00",
+      "version": 1
+    },
+    "behaviour": [],
+    "contract_hash": "7db971baf307e42af45a3dcefe1e0c0cdb78a3e8c27cab449ac7c38eca67a01a",
+    "created_at": "2026-08-21T11:55:05.889632+00:00",
+    "description": null,
+    "evidence_requirements": [
+      {
+        "description": "Show source changes made to satisfy this contract.",
+        "evidence_type": "SOURCE_DIFF",
+        "id": "9628fd8f-7fc6-4193-8f7e-95e9eaa54be1",
+        "metadata": {},
+        "related_acceptance_criterion_id": null,
+        "related_scope_item_id": null,
+        "related_security_requirement_id": null,
+        "required": true
+      },
+      {
+        "description": "Provide relevant test results for the implemented contract.",
+        "evidence_type": "TEST_RESULT",
+        "id": "769d43cb-11b1-4e7d-8772-078f6e7b2c72",
+        "metadata": {},
+        "related_acceptance_criterion_id": null,
+        "related_scope_item_id": null,
+        "related_security_requirement_id": null,
+        "required": true
+      },
+      {
+        "description": "Provide build/check results after implementation.",
+        "evidence_type": "BUILD_RESULT",
+        "id": "efdaaa05-4ff2-4b06-aaf9-63f3cb65ecc3",
+        "metadata": {},
+        "related_acceptance_criterion_id": null,
+        "related_scope_item_id": null,
+        "related_security_requirement_id": null,
+        "required": true
+      }
+    ],
+    "frozen_at": "2026-08-21T11:56:00.942081+00:00",
+    "id": "3678a036-df80-48b7-b3af-a4fe613df230",
+    "implementation_instruction_status": "AUTHORITATIVE",
+    "knowledge_snapshot": {
+      "approved_claims": 10,
+      "base_current_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+      "open_questions": 13,
+      "snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+      "target_desired_state_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff"
+    },
+    "metadata": {
+      "created_from": "APPROVED_DESIRED_STATE"
+    },
+    "objective": "Governed implementation package for approved Desired architecture.",
+    "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "revision": 4,
+    "scope": [
+      {
+        "description": "Candidate implementation scope generated from approved Desired architecture diff.",
+        "id": "ecf9b5ff-58d6-41de-a647-426e5627b193",
+        "metadata": {},
+        "provenance": {
+          "source": "ARCHITECTURE_DIFF"
+        },
+        "reason": null,
+        "required": true,
+        "scope_type": "MUST_CHANGE",
+        "sequence": 1,
+        "source": "SOURCE_ANALYSIS",
+        "target_entity_id": null,
+        "target_identity": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+        "target_reference": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+        "target_relationship_id": null,
+        "target_type": "RELATIONSHIP"
+      }
+    ],
+    "security": [
+      {
+        "acceptance_condition": "Security review and available tests show no regression in existing controls.",
+        "category": "OTHER",
+        "id": "72e9324f-6de9-4909-bf8e-21300de1a84b",
+        "metadata": {},
+        "prohibited": false,
+        "reason": null,
+        "required": true,
+        "requirement": "Do not reduce existing authentication, authorization, input validation, secrets handling, logging, or transport-security controls while implementing the approved Desired Architecture.",
+        "severity": "HIGH",
+        "source": "HUMAN",
+        "source_reference": null
+      }
+    ],
+    "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+    "stable_key": "IC-0002",
+    "status": "READY_FOR_IMPLEMENTATION",
+    "superseded_by_id": null,
+    "supersedes_id": null,
+    "target_desired_state": {
+      "approved_at": "2026-08-21T11:33:28.298142+00:00",
+      "approved_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+      "created_at": "2026-08-21T11:33:26.082166+00:00",
+      "created_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+      "description": "Draft Desired architecture created from diagram architecture proposals.",
+      "id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+      "metadata": {
+        "base_current_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+        "base_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "implementation_status": "IMPLEMENTATION_PENDING"
+      },
+      "name": "Diagram proposal 8f77dfea-953d-494f-b085-86720eed5d02",
+      "parent_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+      "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+      "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+      "state_type": "DESIRED",
+      "status": "APPROVED",
+      "updated_at": "2026-08-21T11:33:28.299992+00:00",
+      "version": 18
+    },
+    "target_diff": {
+      "entities_added": [],
+      "entities_modified": [],
+      "entities_removed": [],
+      "relationships_added": [
+        {
+          "architecture_status": "ADDED",
+          "change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+          "confidence": "HIGH",
+          "id": "desired:81d0afde-a3be-4911-90b0-6cfcf740a77a",
+          "metadata": {
+            "diagram_id": "8abee9ca-f141-41b9-9413-06f4ddde7a65",
+            "proposal_id": "95003549-a93f-4bc2-bbf6-e39dc0470599",
+            "revision_id": "ddd99c02-7ba1-4095-9292-0205f1dd3265",
+            "source": "DIAGRAM_PROPOSAL"
+          },
+          "operation_id": "81d0afde-a3be-4911-90b0-6cfcf740a77a",
+          "provenance": "HUMAN",
+          "relationship_id": null,
+          "relationship_type": "CALLS",
+          "resolution_status": "RESOLVED",
+          "source_entity_id": "95bfc357-7f3c-41d4-85e1-d7c4d97b9ee8",
+          "source_identity": "CLASS:api.main.ForecastResult",
+          "stable_identity": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+          "target_entity_id": "98feeebb-d8f9-4323-a6ec-ed207d736087",
+          "target_identity": "CLASS:api.main.PredictionResult"
+        }
+      ],
+      "relationships_modified": [],
+      "relationships_removed": [],
+      "summary": [
+        "Architecture Change Summary",
+        "1 relationship added:",
+        "+ CLASS:api.main.ForecastResult --CALLS--> CLASS:api.main.PredictionResult"
+      ]
+    },
+    "technology": [
+      {
+        "allowed_dependencies": [],
+        "build_system": null,
+        "database": null,
+        "deployment_target": null,
+        "framework": null,
+        "framework_version": null,
+        "id": "5383ae93-b00a-4880-ab13-a06e4c5ba979",
+        "language_version": null,
+        "messaging": null,
+        "metadata": {},
+        "prohibited_dependencies": [],
+        "reason": "Baseline guardrail: preserve the current runtime unless the approved Desired Architecture explicitly requires a change.",
+        "required_dependencies": [],
+        "runtime": "Existing project runtime",
+        "source": "HUMAN",
+        "source_reference": null,
+        "target_language": null
+      }
+    ],
+    "title": "Implementation Contract",
+    "updated_at": "2026-08-21T11:56:00.942199+00:00",
+    "version": 1
+  },
+  "diagrams": {
+    "pending_architecture_proposals": 0,
+    "selected": [
+      {
+        "architecture_state_id": "a7fa9792-1f4f-44c2-a91f-4d4ef01db343",
+        "diagram_id": "16585620-fb08-49f8-be3e-fdf3de418889",
+        "pending_architecture_proposals": 0,
+        "required": false,
+        "revision_id": "8f77dfea-953d-494f-b085-86720eed5d02",
+        "revision_number": 7,
+        "state_scope": "DESIRED",
+        "status": "FINAL",
+        "view_type": "component_diagram"
+      },
+      {
+        "architecture_state_id": null,
+        "diagram_id": "8abee9ca-f141-41b9-9413-06f4ddde7a65",
+        "pending_architecture_proposals": 0,
+        "required": false,
+        "revision_id": "dd55e919-3119-4c2a-b898-58450bbae6d3",
+        "revision_number": 14,
+        "state_scope": "PROPOSED",
+        "status": "FINAL",
+        "view_type": "component_diagram"
+      }
+    ],
+    "selected_count": 2
+  },
+  "diff": {
+    "change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+    "counts": {
+      "entities_added": 0,
+      "entities_modified": 0,
+      "entities_removed": 0,
+      "relationships_added": 1,
+      "relationships_modified": 0,
+      "relationships_removed": 0
+    },
+    "raw": {
+      "entities_added": [],
+      "entities_modified": [],
+      "entities_removed": [],
+      "relationships_added": [
+        {
+          "architecture_status": "ADDED",
+          "change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+          "confidence": "HIGH",
+          "id": "desired:81d0afde-a3be-4911-90b0-6cfcf740a77a",
+          "metadata": {
+            "diagram_id": "8abee9ca-f141-41b9-9413-06f4ddde7a65",
+            "proposal_id": "95003549-a93f-4bc2-bbf6-e39dc0470599",
+            "revision_id": "ddd99c02-7ba1-4095-9292-0205f1dd3265",
+            "source": "DIAGRAM_PROPOSAL"
+          },
+          "operation_id": "81d0afde-a3be-4911-90b0-6cfcf740a77a",
+          "provenance": "HUMAN",
+          "relationship_id": null,
+          "relationship_type": "CALLS",
+          "resolution_status": "RESOLVED",
+          "source_entity_id": "95bfc357-7f3c-41d4-85e1-d7c4d97b9ee8",
+          "source_identity": "CLASS:api.main.ForecastResult",
+          "stable_identity": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+          "target_entity_id": "98feeebb-d8f9-4323-a6ec-ed207d736087",
+          "target_identity": "CLASS:api.main.PredictionResult"
+        }
+      ],
+      "relationships_modified": [],
+      "relationships_removed": [],
+      "summary": [
+        "Architecture Change Summary",
+        "1 relationship added:",
+        "+ CLASS:api.main.ForecastResult --CALLS--> CLASS:api.main.PredictionResult"
+      ]
+    },
+    "summary": [
+      "Architecture Change Summary",
+      "1 relationship added:",
+      "+ CLASS:api.main.ForecastResult --CALLS--> CLASS:api.main.PredictionResult"
+    ]
+  },
+  "documents": {
+    "available": [
+      {
+        "document_id": "cbcfa688-b395-4183-8bed-d74fda17556f",
+        "document_type": "database_documentation",
+        "pending_architecture_proposals": 0,
+        "revision_id": "0aaba7a9-f5b8-48c5-bf94-9f5845b5060b",
+        "revision_number": 2,
+        "selected": true,
+        "staleness_status": "POSSIBLY_STALE",
+        "status": "FINAL",
+        "title": "Database Documentation - Insurance Customer Project"
+      }
+    ],
+    "available_count": 1,
+    "pending_architecture_proposals": 0,
+    "selected": [
+      {
+        "document_id": "cbcfa688-b395-4183-8bed-d74fda17556f",
+        "document_type": "database_documentation",
+        "pending_architecture_proposals": 0,
+        "required": false,
+        "revision_id": "0aaba7a9-f5b8-48c5-bf94-9f5845b5060b",
+        "revision_number": 2,
+        "selection_source": "HUMAN",
+        "staleness_status": "POSSIBLY_STALE",
+        "status": "FINAL",
+        "title": "Database Documentation - Insurance Customer Project"
+      }
+    ],
+    "selected_count": 1,
+    "stale_revision_count": 2
+  },
+  "evidence_requirements": [
+    {
+      "description": "Show source changes made to satisfy this contract.",
+      "evidence_type": "SOURCE_DIFF",
+      "id": "9628fd8f-7fc6-4193-8f7e-95e9eaa54be1",
+      "metadata": {},
+      "related_acceptance_criterion_id": null,
+      "related_scope_item_id": null,
+      "related_security_requirement_id": null,
+      "required": true
+    },
+    {
+      "description": "Provide relevant test results for the implemented contract.",
+      "evidence_type": "TEST_RESULT",
+      "id": "769d43cb-11b1-4e7d-8772-078f6e7b2c72",
+      "metadata": {},
+      "related_acceptance_criterion_id": null,
+      "related_scope_item_id": null,
+      "related_security_requirement_id": null,
+      "required": true
+    },
+    {
+      "description": "Provide build/check results after implementation.",
+      "evidence_type": "BUILD_RESULT",
+      "id": "efdaaa05-4ff2-4b06-aaf9-63f3cb65ecc3",
+      "metadata": {},
+      "related_acceptance_criterion_id": null,
+      "related_scope_item_id": null,
+      "related_security_requirement_id": null,
+      "required": true
+    }
+  ],
+  "handoff_schema": "blueprint.transformation_handoff.v1",
+  "impact": {
+    "change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+    "dependent_count": 2,
+    "direct_count": 2,
+    "knowledge_gaps": [
+      "Business-rule impact",
+      "Security impact",
+      "Database impact"
+    ],
+    "raw": {
+      "change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+      "dependent_impacts": [
+        {
+          "entity": {
+            "entity_type": "MODULE",
+            "id": "6d43e312-446f-4b7c-ac33-f8cc2ca4f32f",
+            "name": "main",
+            "qualified_name": "api.main",
+            "source_status": "SOURCE_BACKED",
+            "stable_identity": "MODULE:api.main"
+          },
+          "identity": "MODULE:api.main",
+          "impact_level": "DEPENDENT",
+          "relationship_id": "3e1b5e02-4fda-4e7b-9b8d-f4c98c535128"
+        },
+        {
+          "entity": {
+            "entity_type": "CLASS",
+            "id": "95bfc357-7f3c-41d4-85e1-d7c4d97b9ee8",
+            "name": "ForecastResult",
+            "qualified_name": "api.main.ForecastResult",
+            "source_status": "SOURCE_BACKED",
+            "stable_identity": "CLASS:api.main.ForecastResult"
+          },
+          "identity": "CLASS:api.main.ForecastResult",
+          "impact_level": "DEPENDENT",
+          "relationship_id": "3947b614-5144-40ca-ac43-b39ca0cbfbd3"
+        }
+      ],
+      "diff_summary": [
+        "Architecture Change Summary",
+        "1 relationship added:",
+        "+ CLASS:api.main.ForecastResult --CALLS--> CLASS:api.main.PredictionResult"
+      ],
+      "direct_impacts": [
+        {
+          "entity": {
+            "entity_type": "CLASS",
+            "id": "95bfc357-7f3c-41d4-85e1-d7c4d97b9ee8",
+            "name": "ForecastResult",
+            "qualified_name": "api.main.ForecastResult",
+            "source_status": "SOURCE_BACKED",
+            "stable_identity": "CLASS:api.main.ForecastResult"
+          },
+          "identity": "CLASS:api.main.ForecastResult",
+          "impact_level": "DIRECT",
+          "relationship_id": null
+        },
+        {
+          "entity": {
+            "entity_type": "CLASS",
+            "id": "98feeebb-d8f9-4323-a6ec-ed207d736087",
+            "name": "PredictionResult",
+            "qualified_name": "api.main.PredictionResult",
+            "source_status": "SOURCE_BACKED",
+            "stable_identity": "CLASS:api.main.PredictionResult"
+          },
+          "identity": "CLASS:api.main.PredictionResult",
+          "impact_level": "DIRECT",
+          "relationship_id": null
+        }
+      ],
+      "knowledge_gaps": [
+        "Business-rule impact",
+        "Security impact",
+        "Database impact"
+      ],
+      "related_impacts": [
+        {
+          "entity": {
+            "entity_type": "CLASS",
+            "id": "98feeebb-d8f9-4323-a6ec-ed207d736087",
+            "name": "PredictionResult",
+            "qualified_name": "api.main.PredictionResult",
+            "source_status": "SOURCE_BACKED",
+            "stable_identity": "CLASS:api.main.PredictionResult"
+          },
+          "identity": "CLASS:api.main.PredictionResult",
+          "impact_level": "RELATED",
+          "relationship_id": "3947b614-5144-40ca-ac43-b39ca0cbfbd3"
+        }
+      ],
+      "unknown_areas": [
+        {
+          "area": "Business-rule impact",
+          "reason": "No structured business-rule relationships are available.",
+          "status": "UNKNOWN"
+        },
+        {
+          "area": "Security impact",
+          "reason": "No structured security-rule relationships are available.",
+          "status": "UNKNOWN"
+        },
+        {
+          "area": "Database impact",
+          "reason": "Database/model relationships may be partial or unavailable.",
+          "status": "UNKNOWN"
+        }
+      ],
+      "unresolved_references": [
+        {
+          "id": "b4cfb80d-a7a5-422f-aac7-73443c359a27",
+          "reason": "import points outside analysed source",
+          "reference_kind": "EXTERNAL_DEPENDENCY",
+          "source_entity_identity": "CLASS:api.main.PredictionResult",
+          "symbol": "BaseModel"
+        },
+        {
+          "id": "9f2a9a4b-7a47-4349-a71e-9c0b004a9a58",
+          "reason": "import points outside analysed source",
+          "reference_kind": "EXTERNAL_DEPENDENCY",
+          "source_entity_identity": "CLASS:api.main.ForecastResult",
+          "symbol": "BaseModel"
+        },
+        {
+          "id": "9660f798-5756-4ed0-9ed1-d6fad72532e9",
+          "reason": "import points outside analysed source",
+          "reference_kind": "EXTERNAL_DEPENDENCY",
+          "source_entity_identity": "CLASS:api.main.ForecastResult",
+          "symbol": "List"
+        }
+      ]
+    },
+    "related_count": 1,
+    "unresolved_reference_count": 3
+  },
+  "knowledge_gaps": {
+    "gaps": [
+      {
+        "code": "UNRESOLVED_REFERENCES",
+        "count": 11,
+        "status": "PARTIAL"
+      },
+      {
+        "code": "SECURITY_REQUIREMENTS_UNKNOWN",
+        "status": "UNKNOWN"
+      },
+      {
+        "code": "BUSINESS_RULES_UNKNOWN",
+        "status": "UNKNOWN"
+      }
+    ],
+    "unresolved_reference_count": 11
+  },
+  "mcp": {
+    "active_count": 1,
+    "connections": [
+      {
+        "activity": {
+          "last_error_code": null,
+          "last_status": null,
+          "last_tool": null,
+          "tool_call_count": 0
+        },
+        "agent_type": "CODEX",
+        "connection_type": "STREAMABLE_HTTP",
+        "created_at": "2026-08-21T07:45:56.021188+00:00",
+        "created_by": "c1696e35-1886-482e-945d-35de2898d6f0",
+        "credential_fingerprint": "fbf8ac9372f8d694",
+        "credential_identifier": "Iw1uwpzto7aq",
+        "credential_version": 1,
+        "description": "",
+        "expires_at": null,
+        "health": "NEVER_CONNECTED",
+        "id": "8187f715-425e-4b84-b301-6a22980b55f9",
+        "last_used_at": null,
+        "name": "Codex Project Connection",
+        "plaintext_secret": null,
+        "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+        "revoked_at": null,
+        "scopes": [
+          "architecture:read",
+          "assurance:read",
+          "contracts:read",
+          "delivery:read",
+          "desired:read",
+          "diagrams:read",
+          "documents:read",
+          "engineering_memory:read",
+          "enterprise:read",
+          "execution:read",
+          "implementation:read",
+          "implementation:report",
+          "integrations:read",
+          "pilot:read",
+          "pipeline:read",
+          "reconciliation:read",
+          "remediation:read",
+          "security:read",
+          "transformation:read"
+        ],
+        "secret_shown_only_once": false,
+        "status": "ACTIVE",
+        "tenant_id": "61a871bf-35db-4b51-ad16-115593bdeac3",
+        "updated_at": "2026-08-25T06:36:55.593897+00:00"
+      }
+    ],
+    "external_client_connected_count": 0,
+    "status": "BLUEPRINT_READY"
+  },
+  "open_questions": {
+    "blocking_count": 0,
+    "open_count": 13,
+    "questions": [
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T09:30:51.195772+00:00",
+        "id": "0eb58a8c-d307-4501-9240-6f527e6d6af0",
+        "question": "Document revision Code Documentation - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T09:29:51.246964+00:00",
+        "id": "2afcc785-9d5d-4357-94cb-fca62f616123",
+        "question": "Document revision User Guide - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T08:51:25.611925+00:00",
+        "id": "cf500c48-c36c-496d-9bec-0b5c1d91c063",
+        "question": "Document revision Operations Guide - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T06:18:13.004046+00:00",
+        "id": "d2b365c0-357e-4077-bd03-ed1b10033d93",
+        "question": "Document revision Database Documentation - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T05:38:43.529262+00:00",
+        "id": "029ddede-4c01-4d76-9f0d-c9bd5d56fe2b",
+        "question": "Document revision API Documentation - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-18T04:50:14.420071+00:00",
+        "id": "183b7a18-8a9c-4e07-a6ef-6de390e09075",
+        "question": "Document revision Low Level Design - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T12:42:40.315822+00:00",
+        "id": "51a40721-276d-4146-ab94-b88b3af29718",
+        "question": "Document revision Software Requirements Specification - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T11:04:35.971432+00:00",
+        "id": "867a989d-06b1-4e3b-9b39-8174bb218166",
+        "question": "Document revision Business Requirements Document - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T10:13:12.976023+00:00",
+        "id": "93748c38-24ec-448e-9ed4-38d29b8e625a",
+        "question": "Document revision High Level Design - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T09:48:21.858425+00:00",
+        "id": "13a96357-db68-43e5-8b29-ca42218e996c",
+        "question": "Document revision Executive Summary - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T09:30:29.635255+00:00",
+        "id": "e5403f31-a128-4c75-910b-f6523c2408a3",
+        "question": "Document revision Security Assessment - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-17T09:17:53.332930+00:00",
+        "id": "b89441ed-5862-4c18-8457-ea76b3a03f37",
+        "question": "Document revision Deployment Guide - Insurance Customer Project contains UNKNOWN sections that need review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      },
+      {
+        "architecture_state_id": null,
+        "blocking": false,
+        "created_at": "2026-08-14T11:32:15.696872+00:00",
+        "id": "37c3fc4f-4b1c-4df2-a58e-41e7115c7ff2",
+        "question": "Architecture analysis found unresolved reference BaseModel; dependency intent needs review.",
+        "question_type": "MISSING_CONTEXT",
+        "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "OPEN"
+      }
+    ]
+  },
+  "project": {
+    "id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "name": "Insurance Customer Project"
+  },
+  "readiness": {
+    "checks": [
+      {
+        "category": "Source",
+        "code": "CURRENT_STATE_EXISTS",
+        "count": null,
+        "message": "Current Architecture is available.",
+        "metadata": {},
+        "resolution_guidance": "Run Architecture Kernel analysis to create Current Architecture.",
+        "severity": "BLOCKER",
+        "source": "ArchitectureState",
+        "source_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+        "status": "PASS"
+      },
+      {
+        "category": "Source",
+        "code": "CURRENT_HAS_SOURCE_SNAPSHOT",
+        "count": null,
+        "message": "Current Architecture is tied to a SourceSnapshot.",
+        "metadata": {},
+        "resolution_guidance": "Re-run source ingestion/analysis to bind Current to a snapshot.",
+        "severity": "BLOCKER",
+        "source": "SourceSnapshot",
+        "source_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+        "status": "PASS"
+      },
+      {
+        "category": "Desired",
+        "code": "DESIRED_STATE_EXISTS",
+        "count": null,
+        "message": "Target Desired Architecture exists.",
+        "metadata": {},
+        "resolution_guidance": "Create and review a Desired Architecture State.",
+        "severity": "BLOCKER",
+        "source": "ArchitectureState",
+        "source_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+        "status": "PASS"
+      },
+      {
+        "category": "Desired",
+        "code": "DESIRED_STATE_APPROVED",
+        "count": null,
+        "message": "Desired Architecture is approved.",
+        "metadata": {},
+        "resolution_guidance": "Approve the Desired Architecture before transformation.",
+        "severity": "BLOCKER",
+        "source": "ArchitectureState",
+        "source_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+        "status": "PASS"
+      },
+      {
+        "category": "Desired",
+        "code": "DESIRED_STATE_NOT_STALE",
+        "count": null,
+        "message": "Desired Architecture is based on the active Current state.",
+        "metadata": {},
+        "resolution_guidance": "Review/rebase Desired Architecture because Current changed.",
+        "severity": "BLOCKER",
+        "source": "ArchitectureState",
+        "source_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+        "status": "PASS"
+      },
+      {
+        "category": "Desired",
+        "code": "CHANGE_SET_APPROVED",
+        "count": null,
+        "message": "Relevant Architecture Change Set is approved.",
+        "metadata": {},
+        "resolution_guidance": "Approve the Architecture Change Set before transformation.",
+        "severity": "BLOCKER",
+        "source": "ArchitectureChangeSet",
+        "source_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+        "status": "PASS"
+      },
+      {
+        "category": "Documents",
+        "code": "NO_BLOCKING_DOCUMENT_PROPOSALS",
+        "count": 0,
+        "message": "No unresolved architecture-impacting document proposals.",
+        "metadata": {},
+        "resolution_guidance": "Review/apply/reject document architecture proposals.",
+        "severity": "BLOCKER",
+        "source": "DocumentArchitectureProposal",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Documents",
+        "code": "NO_STALE_DOCUMENTS",
+        "count": 0,
+        "message": "No stale document revisions selected or known.",
+        "metadata": {},
+        "resolution_guidance": "Review stale documents or update selection.",
+        "severity": "WARNING",
+        "source": "DocumentRevision",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Diagrams",
+        "code": "NO_BLOCKING_DIAGRAM_PROPOSALS",
+        "count": 0,
+        "message": "No unresolved architecture-impacting diagram proposals.",
+        "metadata": {},
+        "resolution_guidance": "Review/apply/reject diagram architecture proposals.",
+        "severity": "BLOCKER",
+        "source": "DiagramArchitectureProposal",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Knowledge",
+        "code": "NO_BLOCKING_OPEN_QUESTIONS",
+        "count": 0,
+        "message": "No blocking engineering questions are open.",
+        "metadata": {},
+        "resolution_guidance": "Resolve blocking engineering questions before handoff.",
+        "severity": "BLOCKER",
+        "source": "EngineeringQuestion",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Knowledge",
+        "code": "KNOWLEDGE_GAPS_SURFACED",
+        "count": 3,
+        "message": "Knowledge gaps are surfaced without guessing.",
+        "metadata": {},
+        "resolution_guidance": "Review UNKNOWN areas before implementation.",
+        "severity": "WARNING",
+        "source": "EngineeringContextService",
+        "source_id": null,
+        "status": "WARNING"
+      },
+      {
+        "category": "Scope",
+        "code": "TRANSFORMATION_SCOPE_EXISTS",
+        "count": null,
+        "message": "Final Transformation Scope exists.",
+        "metadata": {},
+        "resolution_guidance": "Create a scope from an approved contract/change set.",
+        "severity": "BLOCKER",
+        "source": "TransformationScope",
+        "source_id": "8682a6f4-78d0-44fe-a8a0-4b30da7d9f56",
+        "status": "PASS"
+      },
+      {
+        "category": "Scope",
+        "code": "MUST_CHANGE_DEFINED",
+        "count": 1,
+        "message": "MUST_CHANGE scope is defined.",
+        "metadata": {},
+        "resolution_guidance": "Add at least one MUST_CHANGE item to the implementation contract scope.",
+        "severity": "BLOCKER",
+        "source": "ImplementationScopeItem",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Scope",
+        "code": "PRESERVE_AND_PROHIBITED_CONSIDERED",
+        "count": 0,
+        "message": "MUST_PRESERVE and MUST_NOT_CHANGE are visible where defined.",
+        "metadata": {},
+        "resolution_guidance": "Review preservation/prohibition scope before handoff.",
+        "severity": "INFO",
+        "source": "ImplementationScopeItem",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Contract",
+        "code": "IMPLEMENTATION_CONTRACT_EXISTS",
+        "count": null,
+        "message": "Implementation Contract exists.",
+        "metadata": {},
+        "resolution_guidance": "Create and freeze an implementation contract.",
+        "severity": "BLOCKER",
+        "source": "ImplementationContract",
+        "source_id": "3678a036-df80-48b7-b3af-a4fe613df230",
+        "status": "PASS"
+      },
+      {
+        "category": "Contract",
+        "code": "CONTRACT_READY_FOR_IMPLEMENTATION",
+        "count": null,
+        "message": "Contract is READY_FOR_IMPLEMENTATION.",
+        "metadata": {},
+        "resolution_guidance": "Approve and freeze the contract, then mark it ready for implementation.",
+        "severity": "BLOCKER",
+        "source": "ImplementationContract",
+        "source_id": "3678a036-df80-48b7-b3af-a4fe613df230",
+        "status": "PASS"
+      },
+      {
+        "category": "Contract",
+        "code": "CONTRACT_READINESS_PASSING",
+        "count": null,
+        "message": "Contract readiness has no blockers.",
+        "metadata": {
+          "contract_readiness": {
+            "blockers": [],
+            "blocking_open_questions": 0,
+            "desired_state_status": "CURRENT",
+            "invalid_references": [],
+            "scope_conflicts": [],
+            "scope_coverage": {
+              "extra_must_change_scope": [],
+              "scoped_changes": 1,
+              "total_desired_changes": 1,
+              "unscoped_changes": []
+            },
+            "status": "READY",
+            "warnings": []
+          }
+        },
+        "resolution_guidance": "Resolve implementation contract readiness blockers.",
+        "severity": "BLOCKER",
+        "source": "ImplementationContractService",
+        "source_id": "3678a036-df80-48b7-b3af-a4fe613df230",
+        "status": "PASS"
+      },
+      {
+        "category": "Contract",
+        "code": "CONTRACT_INTEGRITY_VALID",
+        "count": null,
+        "message": "Frozen contract hash and material are valid.",
+        "metadata": {},
+        "resolution_guidance": "Re-freeze or repair the contract through governed contract workflow.",
+        "severity": "BLOCKER",
+        "source": "ImplementationContractService",
+        "source_id": "3678a036-df80-48b7-b3af-a4fe613df230",
+        "status": "PASS"
+      },
+      {
+        "category": "MCP",
+        "code": "MCP_CONNECTION_AVAILABLE",
+        "count": null,
+        "message": "A project-scoped MCP connection is available for coding-agent context retrieval.",
+        "metadata": {
+          "active_count": 1,
+          "connections": [
+            {
+              "activity": {
+                "last_error_code": null,
+                "last_status": null,
+                "last_tool": null,
+                "tool_call_count": 0
+              },
+              "agent_type": "CODEX",
+              "connection_type": "STREAMABLE_HTTP",
+              "created_at": "2026-08-21T07:45:56.021188+00:00",
+              "created_by": "c1696e35-1886-482e-945d-35de2898d6f0",
+              "credential_fingerprint": "fbf8ac9372f8d694",
+              "credential_identifier": "Iw1uwpzto7aq",
+              "credential_version": 1,
+              "description": "",
+              "expires_at": null,
+              "health": "NEVER_CONNECTED",
+              "id": "8187f715-425e-4b84-b301-6a22980b55f9",
+              "last_used_at": null,
+              "name": "Codex Project Connection",
+              "plaintext_secret": null,
+              "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+              "revoked_at": null,
+              "scopes": [
+                "architecture:read",
+                "assurance:read",
+                "contracts:read",
+                "delivery:read",
+                "desired:read",
+                "diagrams:read",
+                "documents:read",
+                "engineering_memory:read",
+                "enterprise:read",
+                "execution:read",
+                "implementation:read",
+                "implementation:report",
+                "integrations:read",
+                "pilot:read",
+                "pipeline:read",
+                "reconciliation:read",
+                "remediation:read",
+                "security:read",
+                "transformation:read"
+              ],
+              "secret_shown_only_once": false,
+              "status": "ACTIVE",
+              "tenant_id": "61a871bf-35db-4b51-ad16-115593bdeac3",
+              "updated_at": "2026-08-25T06:36:55.593897+00:00"
+            }
+          ],
+          "external_client_connected_count": 0,
+          "status": "BLUEPRINT_READY"
+        },
+        "resolution_guidance": "Create an MCP connection in the connection centre.",
+        "severity": "BLOCKER",
+        "source": "McpConnection",
+        "source_id": null,
+        "status": "PASS"
+      },
+      {
+        "category": "Security",
+        "code": "SECURITY_REQUIREMENTS_VERIFIED",
+        "count": 1,
+        "message": "Required contract security requirements have supporting security evidence and no open critical/high blockers.",
+        "metadata": {
+          "missing_required_count": 0,
+          "mode": "BLUEPRINT_MANAGED",
+          "open_critical": 0,
+          "open_high": 0,
+          "required_security_requirement_count": 1,
+          "requires_assessment_evidence": true,
+          "security_execution": "PASSED",
+          "status": "PASSED",
+          "verification": [
+            {
+              "blocking_finding_count": 0,
+              "category": "OTHER",
+              "evidence_count": 6,
+              "required_capability": "SECRETS",
+              "requirement_id": "72e9324f-6de9-4909-bf8e-21300de1a84b",
+              "severity": "HIGH",
+              "status": "VERIFIED"
+            }
+          ]
+        },
+        "resolution_guidance": "Enable project security assessment or import external evidence for required SAST/DAST/SCA/secrets/API requirements before handoff.",
+        "severity": "WARNING",
+        "source": "SecurityAssessmentRun",
+        "source_id": null,
+        "status": "PASS"
+      }
+    ],
+    "created_at": "2026-08-25T06:37:34.542344+00:00",
+    "engine_version": "2.17.0",
+    "id": "b8bc8932-b661-4948-b2fc-3a68f90f9506",
+    "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "result": "READY_WITH_WARNINGS",
+    "scope_id": "8682a6f4-78d0-44fe-a8a0-4b30da7d9f56",
+    "summary": {
+      "blocking_count": 0,
+      "check_count": 20,
+      "engine_version": "2.17.0",
+      "warning_count": 1
+    }
+  },
+  "scope": {
+    "architecture_change_set_id": "809d1f6c-95e2-46f7-8758-55abdc9b60bd",
+    "base_current_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+    "created_at": "2026-08-21T11:55:06.429274+00:00",
+    "description": "Governed implementation package for approved Desired architecture.",
+    "id": "8682a6f4-78d0-44fe-a8a0-4b30da7d9f56",
+    "implementation_contract_id": "3678a036-df80-48b7-b3af-a4fe613df230",
+    "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "scope_items": {
+      "MAY_CHANGE": [],
+      "MUST_CHANGE": [
+        {
+          "description": "Candidate implementation scope generated from approved Desired architecture diff.",
+          "id": "ecf9b5ff-58d6-41de-a647-426e5627b193",
+          "metadata": {},
+          "provenance": {
+            "source": "ARCHITECTURE_DIFF"
+          },
+          "reason": null,
+          "required": true,
+          "scope_type": "MUST_CHANGE",
+          "sequence": 1,
+          "source": "SOURCE_ANALYSIS",
+          "target_entity_id": null,
+          "target_identity": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+          "target_reference": "CLASS:api.main.ForecastResult|CALLS|CLASS:api.main.PredictionResult",
+          "target_relationship_id": null,
+          "target_type": "RELATIONSHIP"
+        }
+      ],
+      "MUST_NOT_CHANGE": [],
+      "MUST_PRESERVE": []
+    },
+    "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+    "status": "DRAFT",
+    "target_desired_state_id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+    "title": "Implementation Contract",
+    "updated_at": "2026-08-25T06:35:09.697243+00:00"
+  },
+  "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+  "target_desired_state": {
+    "approved_at": "2026-08-21T11:33:28.298142+00:00",
+    "approved_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+    "created_at": "2026-08-21T11:33:26.082166+00:00",
+    "created_by_id": "c1696e35-1886-482e-945d-35de2898d6f0",
+    "description": "Draft Desired architecture created from diagram architecture proposals.",
+    "id": "0a0b92ee-f126-4c85-8b4a-831dc1daefff",
+    "metadata": {
+      "base_current_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+      "base_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+      "implementation_status": "IMPLEMENTATION_PENDING"
+    },
+    "name": "Diagram proposal 8f77dfea-953d-494f-b085-86720eed5d02",
+    "parent_state_id": "8f4ff307-6e1b-4464-b0dd-7856d9e7ff3b",
+    "project_id": "3a8787d8-344e-4863-ab61-62b85607c634",
+    "source_snapshot_id": "dc72213b-3ef4-43b9-a95c-6b1a30ed2d18",
+    "state_type": "DESIRED",
+    "status": "APPROVED",
+    "updated_at": "2026-08-21T11:33:28.299992+00:00",
+    "version": 18
+  }
+}
